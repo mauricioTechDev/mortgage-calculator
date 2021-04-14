@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <!DOCTYPE html>
+  <html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  </head>
+
+  <body>
+    <h1>Mortgage Calculator</h1>
+
+    <form action="/postMortgageCalculation" method="POST">
+      <input type="number" required placeholder="Loan Amoun" name="loanAmount">
+      <input type="number" required placeholder="Interest Rate" name="interestRate" step=".01">
+      <span>%</span>
+      <section></section>
+      <select name="years" id="cars">
+        <option value="15">15 Year</option>
+        <option value="30">30 Year</option>
+      </select>
+      <input type="submit">
+    </form>
+
+    <ul class="rappers">
+      <% for(let i=0; i < info.length; i++) {%>
+      <li class="rapper">
+        <span data-id="<%= info[i]._id %>">Loan Amount<%= info[i].loanAmount %></span>
+        <span>Interest Rate<%= info[i].interestRate %></span>
+        <span>Years to pay<%= info[i].years %></span>
+        <span>Monthly Pay<%= info[i].total %></span>
+        <span class='fa fa-trash'></span>
+      </li>
+      <% } %>
+    </ul>
+
+
+    <script src='js/main.js'></script>
+  </body>
+
+  </html>
