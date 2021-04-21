@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-  <!-- <link rel="stylesheet" href="css/style.css"> -->
+  <link rel="stylesheet" href="css/login.css">
 </head>
 
 <body>
@@ -23,15 +23,19 @@
 
   <body>
     <h1>Mortgage Calculator</h1>
-    <form action="loginPage">
-      <input type="submit" value="LOG IN" />
-    </form>
-    <form action="signup">
-      <input type="submit" value="SIGNUP" />
+    <form action="/">
+      <input type="submit" value="BACK" />
     </form>
 
-
-
+    <section class="log-form">
+      <h2>Signup for an account</h2>
+      <form action="/signup" method="POST">
+        <input type="email" name="email" placeholder="email" required="" />
+        <input type="password" name="password" placeholder="password" required="" />
+        <button type="submit" class="btn">SIGNUP</button>
+      </form>
+    </section>
+    <!--end log form -->
 
     <script src='js/main.js'></script>
   </body>

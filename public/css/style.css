@@ -5,3 +5,11 @@ h1{
 #id {
   display: none;
 }
+
+.goodDeal {
+  background-color: green;
+}
+
+.badDeal {
+  background-color: red;
+}
